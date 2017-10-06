@@ -20,3 +20,21 @@
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
+
+ unique_post = {
+ 	title: 'unique title',
+ 	body: 'unique body'
+ 	}
+
+ unique_post_ref = Post.find_or_create_by!(unique_post)
+
+puts "#{posts.count} posts created"
+
+unique_comment = {
+ 	post: unique_post_ref,
+ 	body: "unique comment"
+ 	}
+
+ Comment.find_or_create_by!(unique_comment)
+
+ puts "#{Comment.count} comments total"
