@@ -20,3 +20,11 @@
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
+
+ Advertisement.create!(
+ 	title: "Sample Title",
+ 	copy: "Sample Copy",
+ 	price: 100
+ 	)
+
+ puts "Seeded 1 Advertisement"
