@@ -39,12 +39,19 @@
    )
  end
 
- user = User.first
- user.update_attributes!(
-  name: 'acj76730',
- 	email: 'acj76730@loaoa.com',
- 	password: 'helloworld'
- 	)
+ admin = User.create!(
+   name:     'Admin User',
+   email:    'admin@example.com',
+   password: 'helloworld',
+   role:     'admin'
+ )
+ 
+ # Create a member
+ member = User.create!(
+   name:     'Member User',
+   email:    'member@example.com',
+   password: 'helloworld'
+ )
  
  puts "Seed finished"
  puts "#{User.count} users created"
