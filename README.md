@@ -11,7 +11,7 @@ Bloccit is deployed to heroku [here](https://blooming-bayou-92417.herokuapp.com/
 
 ### Setup and Configuration
  - Languages and Frameworks: Ruby on Rails and Bootstrap
- - Ruby version 2.2.1
+ - Ruby version 2.4.1
  - Databases: SQLite (Test, Development), PostgreSQL (Production)
 
 ### Development Tools and Gems include:
